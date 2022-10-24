@@ -64,14 +64,19 @@ dtparam=i2c_arm=on
 dtparam=spi=on
 dtparam=audio=on
 gpu_mem=16
-
 ```
-Si ce n'est pas le cas, [veuillez suivre ces étapes](https://www.balena.io/docs/learn/manage/configuration/).
-8) créer un fichier ```/registry-secrets.yml``` contenant vos crédential balena de la sorte
+Si ce n'est pas le cas, [veuillez suivre ces étapes](https://www.balena.io/docs/learn/manage/configuration/) 
+
+8) créer un fichier 
+ ```bash
+ /registry-secrets.yml
+ ``` 
+ contenant vos crédential balena de la sorte
+ 
 ```bash
 '':
      username: votre_username
      password: votre_mot_de_passe
 ```
-10) Pour déployer vers balena cloud : ``` balena deploy votre_slug/votre_flotte --registry-secrets ./registry-secrets.yml --release-tag="votre_tag"```
-11) À la fin de votre déploiement, une nouvelle release va apparaitre dans votre flotte, dans les paramètre de votre device changer la release du device, pour qu'elle pointe vers la nouvelle release
+9) Pour déployer vers balena cloud : ``` balena deploy votre_slug/votre_flotte --registry-secrets ./registry-secrets.yml --release-tag="votre_tag"```
+10) À la fin de votre déploiement, une nouvelle release va apparaitre dans votre flotte, dans les paramètre de votre device changer la release du device, pour qu'elle pointe vers la nouvelle release
