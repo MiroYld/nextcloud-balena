@@ -69,7 +69,7 @@ Si ce n'est pas le cas, [veuillez suivre ces étapes](https://www.balena.io/docs
 
 8) créer un fichier 
  ```bash
- /registry-secrets.yml
+ registry-secrets.yml
  ``` 
  contenant vos crédential balena de la sorte
  
